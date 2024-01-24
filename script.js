@@ -38,7 +38,7 @@ Amplitude.init({
       name: "Track 01: Tweeters, Woofers, Heavy Metal",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./audio-files-final/wav/Tweeters-Woofers-Heavy Metal.wav",
+      url: "./audio/Tweeters, Woofers, Heavy Metal.wav",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
     },
 
@@ -47,7 +47,7 @@ Amplitude.init({
       name: "Track 02: The Summer of George",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./audio/The-Summer-of-George.mp3",
+      url: "./audio/mp3/The-Summer-of-George.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
     },
 
@@ -56,7 +56,7 @@ Amplitude.init({
       name: "Track 03: Otherkin",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./",
+      url: "./audio/mp3/Otherkin.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
     },
 
@@ -65,8 +65,9 @@ Amplitude.init({
       name: "Track 04: ℏ = h/2π",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./audio/ℏ = h_2π.mp3",
-      cover_art_url: "https://assets.codepen.io/6566924/warp.png",
+      url: "./audio/mp3/ℏ = h_2π.mp3",
+      cover_art_url: "https://assets.codepen.io/6566924/warp.png"
+"ad_astra": "Track-04",
     },
 
     /* Track 05: */
@@ -74,7 +75,7 @@ Amplitude.init({
       name: "Track 05: Just Don't Write Bugs",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./",
+      url: "./audio/mp3/Just-Don't-Write-Bugs.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
     },
 
@@ -83,7 +84,7 @@ Amplitude.init({
       name: "Track 06: Ad Astra",
       artist: "Atom Loves You",
       album: "Ad Astra per Aspera",
-      url: "./audio/Ad-Astra.mp3",
+      url: "./audio/mp3/Ad-Astra.mp3",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
     },
 
