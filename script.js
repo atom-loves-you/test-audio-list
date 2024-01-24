@@ -1,49 +1,62 @@
 let theme = window.matchMedia("(prefers-color-scheme: dark)").matches ?
-  "dark" :
-  "light";
-
-if (theme == "dark") {
-  document.documentElement.classList.add("dark");
+	"dark" :
+	"light";
+if (theme == "dark")
+{
+	document.documentElement.classList.add("dark");
 }
-
 document
-  .getElementById("dark-mode-toggle")
-  .addEventListener("click", function () {
-    document.documentElement.classList.toggle("dark");
-  });
-
-document.getElementById("song-saved").addEventListener("click", function () {
-  document.getElementById("song-saved").classList.toggle("saved");
+	.getElementById("dark-mode-toggle")
+	.addEventListener("click", function()
+	{
+		document.documentElement.classList.toggle("dark");
+	});
+document.getElementById("song-saved").addEventListener("click", function()
+{
+	document.getElementById("song-saved").classList.toggle("saved");
 });
-
 Amplitude.init(
-  {
-    bindings:
-    {
-      37: "prev",
-      39: "next",
-      32: "play_pause",
-    },
-    callbacks:
-    {
-      timeupdate: function () {
-        let percentage = Amplitude.getSongPlayedPercentage();
+{
+	bindings:
+	{
+		37: "prev",
+		39: "next",
+		32: "play_pause"
+	},
+	callbacks:
+	{
+		timeupdate: function()
+		{
+			let percentage = Amplitude.getSongPlayedPercentage();
+			if (isNaN(percentage))
+			{
+				percentage = 0;
+			}
+			/**
+			 * Massive Help from: https://nikitahl.com/style-range-input-css
+			 */
+			let slider = document.getElementById("song-percentage-played");
+			slider.style.backgroundSize = percentage + "% 100%";
+		}
+	},
+	songs: [
+// Tweeters, Woofers, Heavy Metal
+{
+		name: "Track 01: Tweeters, Woofers, Heavy Metal",
+		artist: "Atom Loves You",
+		album: "Album Title Here",
+		url: "./mp3/Tweeters, Woofers, Heavy Metal (quick).mp3",
+		cover_art_url: "https://assets.codepen.io/6566924/warp.png"
+	},
+{
+		name: "Track 02: The Summer of George",
+		artist: "Atom Loves You",
+		album: "Album Title Here",
+		url: "audio/mp3/The-Summer-of-George.mp3",
+		cover_art_url: "https://assets.codepen.io/6566924/warp.png"
+	},
 
-        if (isNaN(percentage)) {
-          percentage = 0;
-        }
-
-        /**
-         * Massive Help from: https://nikitahl.com/style-range-input-css
-         */
-        let slider = document.getElementById("song-percentage-played");
-        slider.style.backgroundSize = percentage + "% 100%";
-      },
-    },
-
-    songs: [
-
-      //Track 01: Tweeters, Woofers, Heavy Metal
+//Track 01: Tweeters, Woofers, Heavy Metal
       {
         name: "Track 01: Tweeters, Woofers, Heavy Metal",
         artist: "Atom Loves You",
@@ -52,7 +65,7 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
       },
 
-      // Track 02: The Summer of George
+// Track 02: The Summer of George
       {
         name: "Track 02: The Summer of George",
         artist: "Atom Loves You",
@@ -61,7 +74,7 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      //Tracl 03: Otherkin
+//Track 03: Otherkin
       {
         name: "Track 03: Otherkin",
         artist: "Atom Loves You",
@@ -70,7 +83,7 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      //Track 04: Ooo
+//Track 04: Ooo
       {
         name: "Track 04: Ooo",
         artist: "Atom Loves You",
@@ -79,7 +92,7 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      // Track 05: ℏ = h/2π
+// Track 05: ℏ = h/2π
       {
         name: "Track 05: ℏ = h/2π",
         artist: "Atom Loves You",
@@ -88,7 +101,7 @@ Amplitude.init(
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
       },
 
-      //Track 06: Ad Astra
+//Track 06: Ad Astra
       {
         name: "Track 06: Ad Astra",
         artist: "Atom Loves You",
@@ -96,107 +109,48 @@ Amplitude.init(
         url: "./audio/mp3/Ad-Astra.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      //Track 07: Just Don't Write Bugs
+//Track 07: 07
       {
-        name: "Track 07: Just Don't Write Bugs",
+        name: "Track 07: Lo-fi",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/mp3/Just-Don't-Write-Bugs.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/mp3/Lo-fi.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-      //Track 08: Data is Destiny,Ad Astra 1
+//Track 08: MySong-62
       {
-        name: "Track 08: Data is Destiny",
+        name: "Track 08: MySong-62",
+        artist: "Atom Loves You",
+        album: "Ad Astra per Aspera, 2024",
+        url: "./audio/wav/My Song 62-Last-Updated-on-Dec-31-2023.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+      },
+
+//Track 09: MySong-36
+      {
+        name: "Track 08: MySong-36",
+        artist: "Atom Loves You",
+        album: "Ad Astra per Aspera, 2024",
+        url: "./audio/wav/My-Song-36-Updated-on-Dec-31-2023.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+      },
+
+//Track 10: Data is Destiny
+      {
+        name: "Track 10: Data is Destiny",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
         url: "./audio/wav/Data is Destiny.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
-
-      //MySong-62      {
-      name: "Track 09: MySong-62",
-      artist: "Atom Loves You",
-      album: "Ad Astra per Aspera, 2024",
-      url: "./audio/wav/My Song 62-Last-Updated-on-Dec-31-2024.wav
-", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+//Track 11:
+      {
+        name: "Track 11: Last Track",
+        artist: "Atom Loves You",
+        album: "Ad Astra per Aspera, 2024",
+        url: "./audio/wav/Last track.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-
-
-  //L'appel du vide
-  {
-    name: "Track 10: L'appel du vide",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./audio/mp3/L'appel-du-Vide.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-  //143 Nao
-  {
-    name: "Track 11: 143 Nao",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./audio/mp3/143-Nao.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-
-
-  // Track 12: MySong-36      {
-  name: "Track 12: MySong-36",
-  artist: "Atom Loves You",
-  album: "Ad Astra per Aspera, 2024",
-  url: "./audio/wav/My-Song-36-Updated-on-Dec-31-2024.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-      },
-
-
-  // Track 13: Just Don't Write Bugs
-  {
-    name: "Track 13: Just Don't Write Bugs",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./audio/mp3/Just-Don't-Write-Bugs.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-
-  // Track 14
-  {
-    name: "Track 14: Very Experimental",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./audio/wav/Very experimental.wav",
-cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-
-
-//Track 15 
+]
+});
+window.onkeydown = function(e)
 {
-name: "Track 15: Lo-fi",
-artist: "Atom Loves You",
-album: "Ad Astra per Aspera, 2024",
-url: "./audio/mp3/Lo-fi.mp3", 
-cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-},
-
-
-//Last Track
-  {
-    name: "Track 00: Last Track (Unnamed)",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./audio/mp3/Lo-fi.mp3", 
-cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-
-
-/********* BLANK ***************
-// Track 00
-  {
-    name: "Track 0:",
-    artist: "Atom Loves You",
-    album: "Ad Astra per Aspera, 2024",
-    url: "./", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-  },
-********************/
-
-    ],
-  });
-
-window.onkeydown = function (e) {
-  return !(e.keyCode == 32);
+	return !(e.keyCode == 32);
 };
