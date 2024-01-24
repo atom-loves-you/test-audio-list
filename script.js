@@ -31,7 +31,6 @@ Amplitude.init({
       slider.style.backgroundSize = percentage + "% 100%";
     },
   },
-
   songs: [
     /* Track 01: Tweeters, Woofers, Heavy Metal */
     {
@@ -122,8 +121,7 @@ Amplitude.init({
       album: "Ad Astra per Aspera",
       url: "./",
       cover_art_url: "https://assets.codepen.io/6566924/warp.png",
-    }
-
+    },
     /* Track 11... */
 
   ],
