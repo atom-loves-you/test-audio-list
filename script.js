@@ -40,39 +40,24 @@ Amplitude.init(
 		}
 	},
 	songs: [
+
 // Tweeters, Woofers, Heavy Metal
 {
 		name: "Track 01: Tweeters, Woofers, Heavy Metal",
 		artist: "Atom Loves You",
-		album: "Album Title Here",
+		album: "Ad Astra per Aspera, 2024",
 		url: "./mp3/Tweeters, Woofers, Heavy Metal (quick).mp3",
 		cover_art_url: "https://assets.codepen.io/6566924/warp.png"
 	},
+
+// Track 02: The Summer of George
 {
 		name: "Track 02: The Summer of George",
 		artist: "Atom Loves You",
-		album: "Album Title Here",
-		url: "audio/mp3/The-Summer-of-George.mp3",
+		album: "Ad Astra per Aspera, 2024",
+		url: "./audio/mp3/The-Summer-of-George.mp3",
 		cover_art_url: "https://assets.codepen.io/6566924/warp.png"
 	},
-
-//Track 01: Tweeters, Woofers, Heavy Metal
-      {
-        name: "Track 01: Tweeters, Woofers, Heavy Metal",
-        artist: "Atom Loves You",
-        album: "Ad Astra per Aspera",
-        url: "./audio/wav/Tweeters, Woofers, Heavy Metal.wav",
-        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
-      },
-
-// Track 02: The Summer of George
-      {
-        name: "Track 02: The Summer of George",
-        artist: "Atom Loves You",
-        album: "Ad Astra per Aspera, 2024",
-        url: "./audio/mp3/The-Summer-of-George.mp3",
-        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
-      },
 
 //Track 03: Otherkin
       {
@@ -96,7 +81,7 @@ Amplitude.init(
       {
         name: "Track 05: ℏ = h/2π",
         artist: "Atom Loves You",
-        album: "Ad Astra per Aspera",
+        album: "Ad Astra per Aspera, 2024",
         url: "./audio/mp3/ℏ = h_2π.mp3",
         cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png"
       },
@@ -106,15 +91,17 @@ Amplitude.init(
         name: "Track 06: Ad Astra",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/mp3/Ad-Astra.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/mp3/Ad-Astra.mp3", 
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
-//Track 07: 07
+//Track 07: Lo-fi
       {
         name: "Track 07: Lo-fi",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/mp3/Lo-fi.mp3", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/mp3/Lo-fi.mp3",
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
 //Track 08: MySong-62
@@ -122,15 +109,17 @@ Amplitude.init(
         name: "Track 08: MySong-62",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/wav/My Song 62-Last-Updated-on-Dec-31-2023.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/wav/My Song 62-Last-Updated-on-Dec-31-2023.wav",
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
 //Track 09: MySong-36
       {
-        name: "Track 08: MySong-36",
+        name: "Track 09: MySong-36",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/wav/My-Song-36-Updated-on-Dec-31-2023.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/wav/My-Song-36-Updated-on-Dec-31-2023.wav",
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
 //Track 10: Data is Destiny
@@ -138,14 +127,27 @@ Amplitude.init(
         name: "Track 10: Data is Destiny",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/wav/Data is Destiny.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/wav/Data is Destiny.wav", 
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
-//Track 11:
+
+
+//Track 11: Jan 25, 2024
       {
-        name: "Track 11: Last Track",
+        name: "Track 11: Jan 25, 2024",
         artist: "Atom Loves You",
         album: "Ad Astra per Aspera, 2024",
-        url: "./audio/wav/Last track.wav", cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+        url: "./audio/wav/Jan-25-2024 2.wav", 
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
+      },
+
+//Track 12:
+      {
+        name: "Track 12: Last Track",
+        artist: "Atom Loves You",
+        album: "Ad Astra per Aspera, 2024",
+        url: "./audio/wav/Last track.wav", 
+        cover_art_url: "https://assets.codepen.io/6566924/bright-colors-grid-square.png",
       },
 
 ]
